@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<script>
+    do{
+	var name = new Object();
+	name = prompt("Введите сюда свое имя", "Имя");
+	document.write('</br>Ваше имя '+ name +'. Очень рады знакомству с Вами!!!');
+    var age = new Object();
+	//age = parseInt(prompt("Сколько Вам лет, если не секрет?", "35"));
+	age = parseInt(prompt("Сколько Вам лет, если не секрет?", "35"));
+    if (isNaN(age) || age<1) {
+        document.write('</br>Кажется, Вы ввели не возраст');
+    }
+    else{
+        document.write('</br>Через 10 лет Вам будет '+ (+age+10) +' лет.');
+    }
+    var again = confirm ("Начать заново?");
+    }
+   while (again);
+</script>
+</body>
+</html>
